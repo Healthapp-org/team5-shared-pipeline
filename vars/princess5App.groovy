@@ -32,12 +32,12 @@ pipeline {
           }
         }
       }
-    }
-     stage("Checkout Code") {
+        stage("Checkout Code") {
                steps {
                    git branch: 'main',
                           url: "${repoUrl}"
                }
-           }
+      }
+    }
 }
 }
