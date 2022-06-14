@@ -33,5 +33,11 @@ pipeline {
         }
       }
     }
+     stage("Checkout Code") {
+               steps {
+                   git branch: 'main',
+                          url: "${repoUrl}"
+               }
+           }
 }
 }
